@@ -11,8 +11,12 @@ app.use(bodyParser.urlencoded({
 })); // support encoded bodies
 
 (async function() {
-	await ngrok.authtoken(process.env.NGROK_API_TOKEN);
-  const url = await ngrok.connect(process.env.PORT || 8443);
+  const url = await ngrok.connect({
+    proto: 'http', // http|tcp|tls, defaults to http
+    addr: 8443, // port or network address, defaults to 80
+    authtoken: process.env.NGROK_API_TOKEN, // your authtoken from ngrok.com
+    region: 'us', // one of ngrok regions (us, eu, au, ap), defaults to us
+});
   console.log("Url : " + url);
 })();
 
