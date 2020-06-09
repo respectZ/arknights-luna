@@ -1,12 +1,21 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+
+const ngrok = require('ngrok');
 app.set('port', (process.env.PORT || 8443));
 app.use(express.static("public"));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({
     extended: true
 })); // support encoded bodies
+
+(async function() {
+	await ngrok.authtoken(process.env.NGROK_API_TOKEN);
+  const url = await ngrok.connect(process.env.PORT || 8443);
+  console.log("Url : " + url);
+})();
+
 //Start Server
 app.listen(app.get('port'), function() {
     console.log('Node app is running on port', app.get('port'));
@@ -13721,3 +13730,4 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + "/public/index.html"));
 
 });
+
