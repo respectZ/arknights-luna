@@ -13669,7 +13669,7 @@ app.get('/account/syncData', function(req, res) {
                 }
             }
         },
-        "ts": Date.now();
+        "ts": Date.now()
     };
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(data));
@@ -13696,6 +13696,9 @@ app.get('charBuild/setDefaultSkill', function(req, res) {
     	res.send(JSON.stringify(data));
 	}
 });
+app.get('charBuild/changeCharSkill', function(req, res) {
+
+})
 app.get('quest/squadFormation', function(req, res) {
     var url = req.url;
 });
