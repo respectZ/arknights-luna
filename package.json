@@ -1,0 +1,23 @@
+{
+  "name": "arknights-luna",
+  "version": "1.0.0",
+  "description": "Arknights Luna Server",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/arknights-luna.git"
+  },
+  "keywords": [
+    "arknights"
+  ],
+  "author": "liminalia",
+  "license": "ISC"
+}
