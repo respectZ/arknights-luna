@@ -62,7 +62,7 @@ var secretarySkinId = "char_113_cqbw#2" //Secretary Skin (W E2)
 * All Operators and Skins, based table
 * Change Secertary
 * Battle, no reward though, no consumption ~~annihilation~~
-* Gacha (Ten pulls only, see [Gacha](https://github.com/respectZ/arknights-luna/gachaPool/README.md)) ~~single pull~~
+* Gacha (Ten pulls only, see [Gacha](https://github.com/respectZ/arknights-luna/blob/master/gachaPool/README.md)) ~~single pull~~
 * Orginite Prime Conversion into Orundum
 
 # Screenshots
