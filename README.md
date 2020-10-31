@@ -1,7 +1,7 @@
 # arknights-luna
 Arknights Proxy with data modification
 
-This won't update nor save your account progress, because it's only client-side
+It will neither update nor save your account progress, as it's client-side only
 
 just my oldddd project, too lazy to port it into python
 
