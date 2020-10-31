@@ -1,4 +1,4 @@
-#Gacha Configuration
+# Gacha Configuration
 Open pool.txt for example
 ```
 [3] //3 stars
